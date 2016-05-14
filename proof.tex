@@ -463,6 +463,10 @@ Anecdotally, I think there is not much between runs, although there may be diffe
 
 \section{Concluding Remarks}
 
+
+My code is on github at \cite{code}, although it has several hardcoded parameters.
+If you were interested in using, I could move parameters to the command line and make it read your files without requiring you to run the python script.
+
 We have seen that it is possible to parallelize Dijkstra's algorithm with a fairly simple modification of running two instances of Dijkstra's algorithm from both the source and sink node.
 My implementation of this algorithm seems to be working well on a all four different types of graphs that I have tried it on: long graphs, random graphs, complete graphs and graphs from a real-world application.
 In general, it appears that the speed up is greater for larger, more dense graphs.
@@ -488,21 +492,34 @@ Finally, it would be satisfying to have an explanation why parallel Dijkstra did
 
 \begin{thebibliography}{9}
 \bibitem{dijk}
+\begin{verbatim}
 https://web.engr.oregonstate.edu/~glencora/wiki/uploads/dijkstra-proof.pdf
+\end{verbatim}
 
 \bibitem{par1}
+\begin{verbatim}
 A. Crauser, K. Mehlhorn, U. Meyer, P. Sanders, ``A parallelization of Dijikstra’s
 shortest path algorithm", in Proc. of MFCS’98, pp. 722-731, 1998.
+\end{verbatim}
 
 
 \bibitem{par2}
+\begin{verbatim}
 Y. Tang, Y. Zhang, H. Chen, ``A Parallel Shortest Path Algorithm Based on GraphPartitioning
 and Iterative Correcting", in Proc. of IEEE HPCC’08, pp. 155-161,
 2008.
+\end{verbatim}
 
 \bibitem{par3}
+\begin{verbatim}
 G. Stefano, A. Petricola, C. Zaroliagis, ``On the implementation of parallel shortest
 path algorithms on a supercomputer", in Proc. of ISPA’06, pp. 406-417, 2006.
+\end{verbatim}
+
+\bibitem{code}
+\begin{verbatim}
+https://github.com/tlhallock/CodeForNetworkFlows
+\end{verbatim}
 
 \end{thebibliography}
 
